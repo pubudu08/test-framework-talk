@@ -14,7 +14,7 @@ describe('Arithmetic Operations', () => {
     expect(calculator.add('1,1')).toBe(2)
   })
 
-  it('Should accept \n as separator',  () => {
+  it('Should accept new line as separator',  () => {
     expect(calculator.add('1\n2,3')).toBe(6)
   })
 
