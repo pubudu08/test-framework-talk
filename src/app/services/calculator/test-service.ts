@@ -1,6 +1,7 @@
 import * as _ from 'lodash'
 
 export const add = (value: string): number => {
+  const separator = ','
 
   if (_.isEmpty(value)) {
     return 0
@@ -8,7 +9,7 @@ export const add = (value: string): number => {
   if (value.length === 1) {
     return parseInt(value)
   }
-  const items = _.split(value, ',')
+  const items = _.split(value, separator)
 
   let sum = 0
 
