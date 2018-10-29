@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "lib": [
+      "es2015.promise",
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "paths": {
+      "#*": [
+        "src/app/*",
+        "generated/*"
+      ],
+      "*": [
+        "libs/*"
+      ]
+    }
+  },
+  "exclude": [
+      "node_modules",
+      "dist",
+      "build"
+  ],
+  "compileOnSave": false
+}
