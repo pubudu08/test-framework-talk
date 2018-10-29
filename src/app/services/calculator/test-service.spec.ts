@@ -13,4 +13,16 @@ describe('Arithmetic Operations', () => {
   it('Should return expected sum',  () => {
     expect(calculator.add('1,1')).toBe(2)
   })
+
+  it('Should accept \n as separator',  () => {
+    expect(calculator.add('1\n2,3')).toBe(5)
+  })
+
+  it('Should accept a custom separator',  () => {
+    expect(calculator.add('//;\n1,2;3')).toBe(6)
+  })
+
+  it('Should throw negative provided int',  () => {
+    expect(calculator.add('-5,2,-10,9')).toThrow()
+  })
 })
