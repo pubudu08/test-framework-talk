@@ -9,4 +9,8 @@ describe('Arithmetic Operations', () => {
   it('Should return single provided element',  () => {
     expect(calculator.add('1')).toBe(1)
   })
+
+  it('Should return expected sum',  () => {
+    expect(calculator.add('1,1')).toBe(2)
+  })
 })
