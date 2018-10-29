@@ -15,7 +15,7 @@ describe('Arithmetic Operations', () => {
   })
 
   it('Should accept \n as separator',  () => {
-    expect(calculator.add('1\n2,3')).toBe(5)
+    expect(calculator.add('1\n2,3')).toBe(6)
   })
 
   it('Should accept a custom separator',  () => {
@@ -23,6 +23,6 @@ describe('Arithmetic Operations', () => {
   })
 
   it('Should throw negative provided int',  () => {
-    expect(calculator.add('-5,2,-10,9')).toThrow()
-  })
+    expect(() => calculator.add('-5,2,-10,9')).toThrow()
+    })
 })
